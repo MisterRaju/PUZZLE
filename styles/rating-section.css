@@ -1,0 +1,134 @@
+/* rating-section.css */
+.rating-section {
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 20px;
+  background: linear-gradient(145deg, #161616, #1a1a1a);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+}
+
+.rating-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #cccccc;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  margin-bottom: 30px;
+}
+
+.rating-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.star {
+  font-size: 60px;
+  color: #555;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: inline-block; /* Prevents wrapping in a box */
+}
+
+.star:hover {
+  color: #ff4321;
+  transform: scale(1.5); /* Only the star scales */
+}
+
+.star.active {
+  color: #ff1c1c;
+  transform: scale(1.3);
+}
+
+.feedback-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #cccccc;
+  margin-bottom: 20px;
+}
+
+.feedback-section {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.feedback-section textarea {
+  width: 100%;
+  height: 120px;
+  padding: 15px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #1f1f1f;
+  border: 2px solid #333;
+  border-radius: 10px;
+  resize: vertical;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feedback-section textarea:focus {
+  border-color: #ff5d1d;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+}
+
+.feedback-section button {
+  display: inline-block;
+  background: linear-gradient(90deg, #ff3220, #ff7300);
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: transform 0.1s ease, box-shadow 0.3s ease;
+  /* box-shadow: 0 6px 12px rgba(255, 111, 97, 0.4); */
+}
+
+.feedback-section button:hover {
+  transform: translateY(-3px);
+  box-shadow: 2px 2px rgba(255, 255, 255, 1);
+}
+
+.feedback-section button:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 6px rgba(255, 111, 97, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .rating-section {
+    padding: 30px 15px;
+  }
+
+  .rating-title {
+    font-size: 26px;
+  }
+
+  .star {
+    font-size: 50px;
+  }
+
+  .feedback-title {
+    font-size: 20px;
+  }
+
+  .feedback-section textarea {
+    font-size: 14px;
+    height: 100px;
+  }
+
+  .feedback-section button {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+}

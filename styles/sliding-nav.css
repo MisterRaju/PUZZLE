@@ -1,0 +1,63 @@
+/* Sliding Navigation (Initially off-screen to the right) */
+
+.slide-nav {
+  position: fixed;
+  top: 0;
+  right: -250px; /* Initially hidden */
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+  /* padding-top: 20px;  */
+}
+
+.slide-nav ul {
+  list-style: none;
+  padding: 20px 0px;
+  margin: 0;
+}
+
+.slide-nav ul li {
+  margin-bottom: 20px;
+}
+
+.slide-nav ul li button {
+  width: 100%;
+  padding: 15px;
+  background: none;
+  color: white;
+  font-size: 18px;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slide-nav ul li button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Close Button */
+.close-btn {
+  /* position: absolute;
+  top: 10px;
+  left: 10px; */
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  background-color: rgb(226, 78, 20);
+}
+
+/* When the menu is opened */
+.slide-nav.open {
+  right: 0; /* Slide the menu in */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+}
