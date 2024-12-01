@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puzzle Games Website</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/game-section.css" />
+    <link rel="stylesheet" href="styles/game-types.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/theme.css" />
+    <link rel="stylesheet" href="styles/buttons.css" />
+    <link rel="stylesheet" href="styles/cards.css" />
+    <link rel="stylesheet" href="styles/rating-section.css" />
+    <link rel="stylesheet" href="styles/sliding-nav.css" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- HEADER -->
+      <header>
+        <div class="logo">Puzzle Games</div>
+        <div class="hamburger" id="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </header>
+
+      <!-- Sliding Navigation -->
+      <div class="slide-nav" id="slideNav">
+        <div class="close-btn" id="closeBtn">X</div>
+        <ul>
+          <li><button>Settings</button></li>
+          <li><button>Mode</button></li>
+          <li><button>Appearance</button></li>
+          <li><button>Sound</button></li>
+        </ul>
+      </div>
+
+      <!-- GAME SECTION -->
+      <section class="first-section">
+        <div class="floating-symbols">
+          <div class="symbol">🔷</div>
+          <div class="symbol">🔶</div>
+          <div class="symbol">⭐</div>
+          <div class="symbol">🔺</div>
+          <div class="symbol">❓</div>
+          <div class="symbol">🔵</div>
+          <div class="symbol">🌀</div>
+          <div class="symbol">🧩</div>
+          <div class="symbol">⬜</div>
+          <div class="symbol">◼</div>
+          <!-- Add 10 more shapes or symbols -->
+        </div>
+
+        <p class="intro-text">
+          Unleash your brain's true potential through interactive challenges
+        </p>
+        <div class="game-buttons">
+          <button>Play <i class="fas fa-play-circle"></i></button>
+          <button>Levels <i class="fas fa-layer-group"></i></button>
+          <button>Settings <i class="fas fa-cog"></i></button>
+        </div>
+      </section>
+      <section class="card-section">
+        <div class="card-details-container">
+          <div class="card">
+            <span><i class="fas fa-puzzle-piece icon"></i> PUZZLE</span>
+          </div>
+          <div class="details">
+            <p>
+              Discover a variety of puzzles designed to challenge your mind,
+              build logical reasoning, and enhance your problem-solving skills
+              in a fun and interactive way.
+            </p>
+          </div>
+        </div>
+        <div class="card-details-container">
+          <div class="details">
+            <p>
+              Sharpen your critical thinking abilities through engaging
+              logic-based challenges that stimulate mental agility and foster
+              strategic thinking for real-life problem-solving.
+            </p>
+          </div>
+          <div class="card">
+            <span><i class="fas fa-brain icon"></i> LOGIC</span>
+          </div>
+        </div>
+        <div class="card-details-container">
+          <div class="card">
+            <span><i class="fas fa-question-circle icon"></i> RIDDLES</span>
+          </div>
+          <div class="details">
+            <p>
+              Solve fascinating riddles that combine creativity, humor, and wit
+              to test your intellect while providing hours of entertainment and
+              mental stimulation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Rating Section -->
+      <div class="rating-section">
+        <p class="rating-title">Rate us :</p>
+        <div class="rating-container">
+          <span class="star" data-rating="1">&#9733;</span>
+          <span class="star" data-rating="2">&#9733;</span>
+          <span class="star" data-rating="3">&#9733;</span>
+          <span class="star" data-rating="4">&#9733;</span>
+          <span class="star" data-rating="5">&#9733;</span>
+        </div>
+        <div class="feedback-section">
+          <p class="feedback-title">Your Feedback :</p>
+          <textarea
+            id="feedback"
+            placeholder="Please write your thoughts about the game here..."
+          ></textarea>
+          <button id="submit-feedback">Submit Feedback</button>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="about">
+          <div class="about-details">
+            <h3>About Us</h3>
+            <p>
+              Puzzle Games is a website that offers a variety of games that
+              challenge your brain and improve your cognitive skills. Our games
+              are designed to be fun and engaging while also providing a mental
+              workout.
+            </p>
+          </div>
+          <div class="social-links">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://www.twitter.com"
+              target="_blank"
+              aria-label="Twitter"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.youtube.com"
+              target="_blank"
+              aria-label="YouTube"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+        <div class="copyright">Copyight</div>
+      </footer>
+    </div>
+
+    <script src="scripts/rating-section.js"></script>
+    <script src="scripts/slide.js"></script>
+  </body>
+</html>
