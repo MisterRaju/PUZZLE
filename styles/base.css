@@ -5,6 +5,20 @@
   box-sizing: border-box;
 }
 
+/* Disable text selection */
+body {
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+}
+
+/* Disable drag for images */
+img {
+  pointer-events: none;
+}
+
+
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
