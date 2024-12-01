@@ -12,3 +12,10 @@ hamburger.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
   slideNav.classList.remove("open");
 });
+
+// Close the sliding menu when clicking outside of it
+document.addEventListener("click", (event) => {
+  if (!slideNav.contains(event.target) && !hamburger.contains(event.target)) {
+    slideNav.classList.remove("open");
+  }
+});
