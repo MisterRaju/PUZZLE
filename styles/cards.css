@@ -89,7 +89,7 @@
 
 .details p {
   font-size: 1.25rem;
-  color: #cccccc;
+  color: #c5c5c5;
   margin: 5px 0 0;
 }
 
@@ -100,5 +100,19 @@
 
   .details p {
     font-size: 1rem;
+  }
+  .card-details-container .card {
+    height: 100px;
+    font-size: 1rem;
+  }
+  .card-details-container .card:hover {
+    box-shadow: 5px 5px rgb(255, 255, 255);
+  }
+
+  .card-details-container {
+    padding: 20px 10px;
+  }
+  .card-details-container .details p {
+    font-size: 0.7rem;
   }
 }
