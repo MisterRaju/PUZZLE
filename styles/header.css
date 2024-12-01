@@ -3,9 +3,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 40px;
+  padding: 20px 40px;
   background-color: rgba(0, 0, 0, 0.95); /* Dark header background */
-  color: #fff; /* White text for contrast */
+  color: rgb(230, 230, 230); /* White text for contrast */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
